@@ -41,20 +41,7 @@ public class LoginTest extends BaseTest {
         Assert.assertEquals(expectedTest,actualTest);
 
     }
-    @Test
-    public void userShouldNavigateToForgotPasswordPageSuccessfully()
-    {
-        //click on the ‘Forgot your password’ link
-        WebElement forgotPassword = driver.findElement(By.xpath("//div[@id='forgotPasswordLink']"));
-        forgotPassword.click();
 
-        //* Verify the text ‘Forgot Your Password?’
-        WebElement VerifyText = driver.findElement(By.xpath("//div[@id='forgotPasswordLink']"));
-        String actualTest = VerifyText.getText();
-        String expectedTest = "Forgot your password?";
-        Assert.assertEquals(expectedTest,actualTest);
-
-    }
 
     @After
     public void closeBrowser()
